@@ -22,3 +22,26 @@ Running the following command on a terminal will give you a basic start on using
 
 **Setting up your environment**
 Your home directory contains a bunch of configuration files that help set up your environment to execute the programs you need. For example, the [.bashrc file](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) is executed everytime you log into a machine that contains that file, it can be used to load modules, export variables or create aliases. 
+
+modules are a quick way to access the environment variables that allow you to run different versions of a program. For example, python2 or 3 will need different modules loaded. 
+`module list` will let you know which modules you have available
+`module available` will tell you all the possible modules you can use
+
+It is not recommended you preload all the modules you want in your bashrc file, but rather  you load them/unload them as needed. You can save configurations for modules you typically load together. For example:
+
+Load some modules:
+`module load  vmd/1.9.3  
+module load ufrc   
+module load  globus/2.1.3   
+module load  cmake/3.12.3   
+module load  cuda/10.0.130  
+module load  swig/3.0.8   
+module load  netcdf/4.2   
+module load  intel/2019 
+module load doxygen/1.8.3.1  
+module load  openmpi/4.0.0`
+And now save an environment, which will go to your ~/.lmod.d/ directory
+`module save intel_compilers`
+Next time you want these modules you can do:
+`module purge
+module restore intel_compilers`
