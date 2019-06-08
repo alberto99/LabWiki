@@ -11,7 +11,7 @@ We will strive to produce high impact robust, reproducible science. The aim is t
 We are commited to maintain a supportive and helpful work environment respecting work-life balance.
  
 # Content
-Getting Started
+[Getting Started]
 DNA basics
 Proteins basics
 Molecular Dynamics Basics
