@@ -47,5 +47,20 @@ module load  openmpi/4.0.0
 And now save an environment, which will go to your ~/.lmod.d/ directory
 `module save intel_compilers`
 Next time you want these modules you can do:
-```module purge
-module restore intel_compilers```
+```
+module purge
+module restore intel_compilers
+```
+
+You can do the same for accessing a different set of Modules, for example the ones i use for OpenMM/Meld with gcc compilers:
+ module list
+
+Currently Loaded Modules:
+  1) vmd/1.9.3   3) globus/2.1.3   5) cuda/10.0.130   7) netcdf/4.2   9) doxygen/1.8.3.1  11) python3/3.6.5
+  2) ufrc        4) cmake/3.12.3   6) swig/3.0.8      8) gcc/7.3.0   10) mkl/2018.1.163   12) openmpi/3.0.0
+
+ 
+
+
+
+![Screenshot 2019 06 08 17 58 39](/uploads/screenshot-2019-06-08-17-58-39.png "Screenshot 2019 06 08 17 58 39")
