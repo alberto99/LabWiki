@@ -59,8 +59,19 @@ Currently Loaded Modules:
   1) vmd/1.9.3   3) globus/2.1.3   5) cuda/10.0.130   7) netcdf/4.2   9) doxygen/1.8.3.1  11) python3/3.6.5
   2) ufrc        4) cmake/3.12.3   6) swig/3.0.8      8) gcc/7.3.0   10) mkl/2018.1.163   12) openmpi/3.0.0
 
- 
+ **Python virtualenvironments**
+Notice that i loaded a python3 environment. We use python as the main scripting language due to its readability, and availability of packages for scientific research (numpy, pyplot, pytorch, scipi, ...) 
+Most python modules you load will already give you access to system installed packages, but in cases you will need to upgrade them or install new ones. Since we canno access the place where they are installed (and it would be a mess if every user could!) a much more versatile way is to create your own virtual environment.
 
+In your home directory cereate a Source direcory where you will have your scientific sotware and make a VirtualEnvironments directory inside it.
+Navigate to it. And let's create a virtualenvironment:
+```
+python3 -m venv --system-site-packages name_of_your_environment
+#To activate your environment:
+source name_of_your_environment/bin/activate
+#To deactivate your evnironment:
+deactivate
+```
 
 
 ![Screenshot 2019 06 08 17 58 39](/uploads/screenshot-2019-06-08-17-58-39.png "Screenshot 2019 06 08 17 58 39")
