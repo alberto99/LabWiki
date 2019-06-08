@@ -1,4 +1,4 @@
-![Screenshot 2019 06 08 17 58 39](/uploads/screenshot-2019-06-08-17-58-39.png "Screenshot 2019 06 08 17 58 39")<!-- TITLE: Getting Started -->
+<!-- TITLE: Getting Started -->
 <!-- SUBTITLE: A quick summary of Getting Started -->
 
 # Header
