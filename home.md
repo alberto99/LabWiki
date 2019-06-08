@@ -12,7 +12,7 @@ We are commited to maintain a supportive and helpful work environment respecting
  
 # Content
 [Getting Started](getting-started)
-DNA basics
-Proteins basics
-Molecular Dynamics Basics
+[DNA basics](ScienceBits/DNA)
+[Proteins basics](ScienceBits/Proteins)
+[Molecular Dynamics Basics](ScienceBits/MD)
 [Using VMD](ScientificSofware/VMD)
