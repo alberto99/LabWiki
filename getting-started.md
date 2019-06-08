@@ -30,7 +30,9 @@ modules are a quick way to access the environment variables that allow you to ru
 It is not recommended you preload all the modules you want in your bashrc file, but rather  you load them/unload them as needed. You can save configurations for modules you typically load together. For example:
 
 Load some modules:
-`module load  vmd/1.9.3  
+
+```text
+module load  vmd/1.9.3  
 module load ufrc   
 module load  globus/2.1.3   
 module load  cmake/3.12.3   
@@ -39,9 +41,11 @@ module load  swig/3.0.8
 module load  netcdf/4.2   
 module load  intel/2019 
 module load doxygen/1.8.3.1  
-module load  openmpi/4.0.0`
+module load  openmpi/4.0.0
+```
+
 And now save an environment, which will go to your ~/.lmod.d/ directory
 `module save intel_compilers`
 Next time you want these modules you can do:
-`module purge
-module restore intel_compilers`
+```module purge
+module restore intel_compilers```
